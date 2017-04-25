@@ -1,6 +1,6 @@
+package counting;
 
-
-public class Comparation {
+public class Counting {
     private static final String VOWELS = "aeiouyAEIOUYаеёиоуыэюяАЕЁИОУЫЭЮЯ";
     private static final String CONSONANTS = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZбвгджзйклмнпрстфхцчшщБВГДЖЗЙКЛМНПРСТФХЦЧШЩ";
 
@@ -14,7 +14,7 @@ public class Comparation {
         return CONSONANTS.indexOf(ch) >= 0;
     }
 
-    public static int Vowel(String line) {
+    public static int vowel(String line) {
 
         int counter = 0;
         for(int i = 0; i < line.length(); ++i)
@@ -24,7 +24,7 @@ public class Comparation {
         return counter;
     }
 
-    public static int Consonants(String line) {
+    public static int consonants(String line) {
 
         int counter = 0;
         for(int i = 0; i < line.length(); ++i)

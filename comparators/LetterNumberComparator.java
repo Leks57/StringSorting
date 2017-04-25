@@ -1,3 +1,5 @@
+package comparators;
+
 import java.util.Comparator;
 
 public class LetterNumberComparator implements Comparator<String> {

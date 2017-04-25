@@ -1,3 +1,9 @@
+import comparators.LetterNumberComparator;
+import comparators.ReversedComparator;
+import comparators.VovelsComparator;
+import view.Input;
+import view.Output;
+
 import java.lang.String;
 import java.io.IOException;
 import java.util.Collections;
@@ -13,7 +19,7 @@ public class StringSorting {
         //Сортировка с помощью 3-х компараторов
         Collections.sort(myList, new VovelsComparator().thenComparing(new LetterNumberComparator()).thenComparing(new ReversedComparator()));
 
-        Output.PrintOut(myList);
+        Output.printOut(myList);
     }
 }
 
